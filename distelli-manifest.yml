@@ -1,5 +1,6 @@
 bmcgehee/SimpleApp5:
 
+  BuildWith: Travis
   Env:
     - NR_INSTALL_SILENT: "TRUE"
     - NR_APP_NAME: "simpleapp.php"
