@@ -8,12 +8,15 @@ bmcgehee/SimpleApp5:
     - PORT: "8000"
 
   PreBuild:
+    - echo "PreBuild"
     - if [ "$test" -eq 0 ]; then
     -   echo "Test is Equal to 0"
     - else
     -   echo "Test is NOT equal to 0"
     - fi
 
+  Build:
+    - echo "Building"
 
   PreInstall:
     - echo "PreInstall"
