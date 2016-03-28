@@ -1,6 +1,7 @@
 bmcgehee/SimpleApp5:
 
   BuildWith: Travis
+  
   Env:
     - NR_INSTALL_SILENT: "TRUE"
     - NR_APP_NAME: "simpleapp.php"
@@ -9,7 +10,7 @@ bmcgehee/SimpleApp5:
 
   PreBuild:
     - echo "PreBuild"
-    - if [ "$test" -eq 0 ]; then
+    - if [[ "$test" -eq 0 ]]; then
     -   echo "Test is Equal to 0"
     - else
     -   echo "Test is NOT equal to 0"
