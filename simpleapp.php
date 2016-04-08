@@ -5,7 +5,7 @@
   $uptime = $uptime[0];
 
   echo "<h3>Hello World from Distelli!</h3>";
-  echo "<p>You have successfully deployed your PHP application.</p>";
+  echo "<p>You have successfully deployed your PHP application.test</p>";
   echo "<p>Server Uptime $uptime </p>";
   echo "<hr>";
   echo "<ul>";
