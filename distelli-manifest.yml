@@ -1,7 +1,7 @@
 bmcgehee/SimpleApp5:
 
   Env:
-    - NR_INSTALL_SILENT: "TRUE"
+    - NR_INSTALL_SILENT: "TRUE" 
     - NR_APP_NAME: "simpleapp.php"
     - NR_INSTALL_KEY: "fc297ee8baef8312725cc134642ab4fce85a7666"
     - PORT: "8000"
