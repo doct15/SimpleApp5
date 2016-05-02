@@ -7,11 +7,11 @@ bmcgehee/SimpleApp5:
     - PORT: "8000"
 
   PreBuild:
-    - if [ "$test" -eq 0 ]; then
-    -   echo "Test is Equal to 0"
-    - else
-    -   echo "Test is NOT equal to 0"
-    - fi
+    #- if [ "$test" -eq 0 ]; then
+    #-   echo "Test is Equal to 0"
+    #- else
+    #-   echo "Test is NOT equal to 0"
+    #- fi
   ReleaseNotesCmd:
     - echo "First"
     - echo "Test"
