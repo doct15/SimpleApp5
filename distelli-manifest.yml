@@ -16,6 +16,7 @@ bmcgehee/SimpleApp5:
     - echo "First"
     - echo "Test"
     - echo "This is third"
+    - 'echo "http://10.206.181.222:9000/overview?id=SparkWeb_DistelliDemo"'
 
   PreInstall:
     - echo "PreInstall"
