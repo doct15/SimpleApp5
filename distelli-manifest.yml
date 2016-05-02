@@ -36,8 +36,7 @@ bmcgehee/SimpleApp5:
     - sudo sh -c "export NR_INSTALL_SILENT=\"TRUE\"; export NR_INSTALL_KEY=\"$NR_INSTALL_KEY\"; export NR_APP_NAME=\"$NR_APP_NAME\"; newrelic-install install"
     
   PkgInclude:
-    #- simpleapp.php
-    - *.zip
+    - '*.zip'
     
   Exec:
     - 'php -S 0.0.0.0:$PORT simpleapp.php'
