@@ -13,11 +13,15 @@ bmcgehee/SimpleApp5:
     #-   echo "Test is NOT equal to 0"
     #- fi
   ReleaseNotesCmd:
-    - echo "First"
-    - echo "Test"
-    - echo "This is third"
-    - 'echo "http://10.206.181.222:9000/overview?id=SparkWeb_DistelliDemo"'
-
+    #- echo "First"
+    #- echo "Test"
+    #- echo "This is third"
+    #- 'echo "http://10.206.181.222:9000/overview?id=SparkWeb_DistelliDemo"'
+  Build:
+    - echo "Nothing to Build"
+  PkgInclude 
+    - ["foo/bar/test.file","."]
+    
   PreInstall:
     - echo "PreInstall"
     - echo "Updating apt-get index"
@@ -35,9 +39,6 @@ bmcgehee/SimpleApp5:
     - sudo apt-get -y update
     - sudo apt-get -y install newrelic-php5
     - sudo sh -c "export NR_INSTALL_SILENT=\"TRUE\"; export NR_INSTALL_KEY=\"$NR_INSTALL_KEY\"; export NR_APP_NAME=\"$NR_APP_NAME\"; newrelic-install install"
-    
-  PkgInclude:
-    - './*.zip'
     
   Exec:
     - 'php -S 0.0.0.0:$PORT simpleapp.php'
