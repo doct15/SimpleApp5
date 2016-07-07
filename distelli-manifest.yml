@@ -19,7 +19,7 @@ bmcgehee/SimpleApp5:
     #- 'echo "http://10.206.181.222:9000/overview?id=SparkWeb_DistelliDemo"'
   Build:
     - echo "Nothing to Build"
-  PkgInclude 
+  PkgInclude:
     - ["foo/bar/test.file","."]
     
   PreInstall:
